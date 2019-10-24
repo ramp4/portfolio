@@ -127,6 +127,16 @@ $style-color: #E3B873;
         background-color: $style-color;
         top: 50%;
     }
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        height: 50px;
+
+        & div {
+            padding: 25px 0;
+            background-size: 100%;
+        }
+    }
 }
 
 html {
@@ -488,6 +498,7 @@ html {
                     height: 15px;
                     width: 53%;
                     background-repeat: no-repeat;
+                    background-size: 100%;
                 }
             }
         }
@@ -608,6 +619,10 @@ html {
         height: 103px;
         @include flex_set(row, space-around, center);
         margin-top: 91px;
+
+        @media screen and (max-width: 1000px) {
+            width: 90%;
+        }
 
         .data--name {
             position: relative;
@@ -1077,6 +1092,7 @@ html {
                 width: 100%;
                 @include bg_set();
                 background-image: url(./dist/assets/realize_img_1`.png);
+                background-size: cover;
             }
 
             .pictures_col_1--item_2 {
@@ -1084,6 +1100,7 @@ html {
                 width: 100%;
                 @include bg_set();
                 background-image: url(./dist/assets/realize_img_3.png);
+                background-size: cover;
             }
         }
 
@@ -1097,6 +1114,7 @@ html {
                 width: 100%;
                 @include bg_set();
                 background-image: url(./dist/assets/realize_img_2.png);
+                background-size: cover;
             }
 
             .pictures_col_2--item_2 {
@@ -1104,6 +1122,7 @@ html {
                 width: 100%;
                 @include bg_set();
                 background-image: url(./dist/assets/realize_img_4.png);
+                background-size: cover;
             }
         }
     }
@@ -1463,15 +1482,16 @@ html {
             &::before {
                 position: absolute;
                 content: "";
-                width: 70px;
-                height: 70px;
+                width: 5vw;
+                height: 5vw;
 
                 background-color: #E3B873;
                 box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
-                top: -35px;
-                left: -35px;
+                top: -2.5vw;
+                left: -2.5vw;
                 background-repeat: no-repeat;
                 background-position: center;
+                background-size: cover;
             }
 
 
@@ -1481,6 +1501,8 @@ html {
                 height: 358px;
                 z-index: -1;
                 top: 0px;
+                background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             .info {
@@ -1528,7 +1550,6 @@ html {
         .person_1 {
             .person--photo {
                 background-image: url(./dist/assets/worker_1.png);
-                @include bg_set();
             }
 
             &::before {
@@ -1539,7 +1560,6 @@ html {
         .person_2 {
             .person--photo {
                 background-image: url(./dist/assets/worker_2.png);
-                @include bg_set();
             }
 
             &::before {
@@ -1550,7 +1570,6 @@ html {
         .person_3 {
             .person--photo {
                 background-image: url(./dist/assets/worker_3.png);
-                @include bg_set();
             }
 
             &::before {
@@ -2000,4 +2019,138 @@ html {
     @include nav();
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 1000px) {
+    .clients {
+        display: none;
+    }
+
+    .room_design {
+        width: 100%;
+    }
+
+    .questions {
+        width: 100%;
+    }
+
+    .location {
+        height: 500px;
+    }
+
+    // .work_exp {
+    //     padding: 20px;
+    // }
+
+    span,
+    .price {
+        padding: 5px;
+    }
+
+
+    .title_block--steps::after {
+        display: none;
+    }
+
+    .turnkey .scroll {
+        display: none;
+    }
+
+    .team .persons .person .work_exp {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .location {}
+}
+
+@media screen and (max-width: 800px) {
+
+    .completed .nav_2 {
+        width: 75%;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .call .call--request {
+        display: none;
+    }
+
+    .footer .menu {
+        display: none;
+    }
+
+    .footer .call .call--request {
+        display: none;
+    }
+
+    .types .room_type .info .price {
+        padding: 20px;
+    }
+
+    .types {
+        height: 1000px;
+    }
+
+    .turnkey .content .content--title {
+        width: 75%;
+    }
+
+    .turnkey .content .content--description {
+        width: 75%;
+    }
+
+    .turnkey .content .buttons {
+        width: 75%;
+    }
+
+    .completed .content .pictures .pictures--item_2 {
+        display: none;
+    }
+
+    .completed .content .text {
+        margin: 0;
+    }
+
+    .completed .content {
+        justify-content: space-around;
+    }
+
+    .request .form .agree .agree--radio {
+        margin-left: 5px;
+    }
+
+    .online .online--text {
+        width: 90%;
+    }
+
+    .design .full .info {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+
+    .design .standard .info {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .design .mini .info {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+    html {
+        font-size: 8px;
+    }
+
+    .six_steps .six_steps--image {
+        background-size: cover;
+    }
+}

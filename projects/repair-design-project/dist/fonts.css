@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("./dist/assets/fonts/FuturaBookC.woff2") format("woff2"), url("./dist/assets/fonts/FuturaBookC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("./dist/assets/fonts/FuturaDemiC.woff2") format("woff2"), url("./dist/assets/fonts/FuturaDemiC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("./dist/assets/fonts/ProximaNova-Regular.woff2") format("woff2"), url("./dist/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+/*# sourceMappingURL=fonts.css.map */

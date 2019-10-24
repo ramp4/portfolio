@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+/* ------------------------------------------------------- header ------------------------------------------------------- */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  height: 400px;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+}
+
+.body {
+  background-color: silver;
+}
+
+.header__photo {
+  height: 15vw;
+  width: 15vw;
+  background-image: url(./assets/photo.jpg);
+  background-position: center;
+  border-radius: 100%;
+  background-size: cover;
+  border: 2px white solid;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info__name {
+  font-size: 4vw;
+  color: #333;
+  order: 0;
+  width: 90%;
+  text-align: left;
+}
+
+.info__github {
+  order: 1;
+  flex-grow: 1;
+}
+
+.info__vk {
+  order: 2;
+  flex-grow: 1;
+
+}
+
+.info__telegram {
+  order: 3;
+  flex-grow: 1;
+}
+
+.info__vk,
+.info__telegram,
+.info__github {
+  font-size: 2vw;
+  text-decoration: none;
+  border: 3px solid white;
+  color: black;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 5px;
+}
+
+/* ------------------------------------------------------- main ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- Education ------------------------------------------------------- */
+
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.education::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+}
+
+.collapsible {
+  background-color: silver;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: 3px solid white;
+  text-align: left;
+  outline: none;
+  font-size: 2vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 2vw;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.place {
+  width: 50%;
+}

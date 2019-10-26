@@ -1,0 +1,709 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../assets/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenProRegular';
+    src: url('../assets/MavenPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../assets/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../assets/MyriadPro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('../assets/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+html {
+    width: 1020px;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 1020px;
+    height: 63px;
+    background: #323232;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    position: relative;
+    left: 478px;
+    top: 10px;
+    bottom: 0px;
+    margin: 0;
+
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -15px;
+    left: -13px;
+    border-top: 26px solid #323232;
+    border-left: 46px solid transparent;
+    border-right: 46px solid transparent;
+}
+
+
+.menu-item {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 255);
+    display: inline-block;
+
+}
+
+.menu {
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    position: absolute;
+    top: 31px;
+    left: 326px;
+    text-align: justify;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 255);
+    height: 8px;
+}
+
+.menu-1 {
+    top: 32px;
+    left: 326px;
+    width: 114px;
+}
+
+.menu-2 {
+    top: 32px;
+    left: 580px;
+    width: 117px;
+}
+
+.menu::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+#PORTFOLIO {
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    color: rgba(46, 179, 152, 255);
+}
+
+
+
+body {
+    position: absolute;
+    width: 1020px;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: absolute;
+    width: 1020px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.hexagon-section {
+    z-index: 0;
+    position: relative;
+    font-size: 0px;
+    height: 721px;
+    background: white;
+
+}
+
+.hexagon-section .hexagon {
+    margin: 0 9px;
+}
+
+.hexagon-section .hexagon-2 {
+    margin: 0 10px;
+}
+
+.hexagon {
+    width: 182px;
+    height: 309px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hexagon-inside {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.hexagon-image {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    visibility: visible;
+    background-color: whitesmoke;
+    background-size: 101%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hexagon-2 {
+    width: 179px;
+    height: 309px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.hexagon-2-inside {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.hexagon-2-image {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    visibility: visible;
+    background-color: whitesmoke;
+    background-size: 101%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row-1 .hexagon-image-1 {
+    background-image: url(../assets/images/Layer\ 33@1X.png);
+}
+
+.row-1 .hexagon-image-2 {
+    background-image: url(../assets/images/Layer\ 31@1X.png);
+}
+
+.row-1 .hexagon-image-3 {
+    background-image: url(../assets/images/Layer\ 34@1X.png);
+}
+
+.row-1 .hexagon-image-4 {
+    background-image: url(../assets/images/Layer\ 35@1X.png);
+    background-size: 124% 73%;
+    background-position: 48% 38%;
+}
+
+.row-2 .hexagon-image-1 {
+    background-image: url(../assets/images/Layer\ 36@1X.png);
+}
+
+.row-2 .hexagon-image-2 {
+    background-image: url(../assets/images/Layer\ 44@1X.png);
+}
+
+.row-2 .hexagon-image-3 {
+    background-image: url(../assets/images/Layer\ 37@1X.png);
+}
+
+.row-2 .hexagon-image-4 {
+    background-image: url(../assets/images/Layer\ 38@1X.png);
+}
+
+.row-2 .hexagon-image-5 {
+    background-image: url(../assets/images/Layer\ 39@1X.png);
+}
+
+.row-3 .hexagon-image-1 {
+    background-image: url(../assets/images/Layer\ 40@1X.png);
+}
+
+.row-3 .hexagon-image-2 {
+    background-image: url(../assets/images/Layer\ 41@1X.png);
+}
+
+.row-3 .hexagon-image-3 {
+    background-image: url(../assets/images/Layer\ 43@1X.png);
+}
+
+.row-3 .hexagon-image-4 {
+    background-image: url(../assets/images/Layer\ 42@1X.png);
+}
+
+.row-1 {
+    position: absolute;
+    left: 110px;
+    top: 39px;
+}
+
+.row-2 {
+    position: absolute;
+    top: 207px;
+    left: 10px;
+
+}
+
+.row-3 {
+    position: absolute;
+    top: 375px;
+    left: 110px;
+}
+
+.lines-hexagon {
+    position: relative;
+}
+
+.lines-hexagon .line {
+    z-index: 1;
+    position: absolute;
+    background: #e4e9eb;
+}
+
+.line-1 {
+    width: 420px;
+    height: 1px;
+    top: 11px;
+    left: 30px;
+}
+
+.line-2 {
+    width: 420px;
+    height: 1px;
+    top: 11px;
+    left: 580px;
+}
+
+.line-3 {
+    width: 1px;
+    height: 104px;
+    top: 141px;
+    left: 99px;
+}
+
+.line-4 {
+    width: 1px;
+    height: 104px;
+    top: 141px;
+    left: 920px;
+}
+
+.line-5 {
+    width: 1px;
+    height: 104px;
+    top: 477px;
+    left: 99px;
+}
+
+.line-6 {
+    width: 1px;
+    height: 104px;
+    top: 477px;
+    left: 920px;
+}
+
+.line-7 {
+    width: 960px;
+    height: 1px;
+    top: 709px;
+    left: 30px;
+}
+
+.info-section {
+    height: 341px;
+    background: #2eb398;
+    position: relative;
+}
+
+.line-style {
+    position: absolute;
+    background-color: #219d84;
+}
+
+.lines-info {
+    position: absolute;
+}
+
+.lines-info .line {
+    z-index: 1;
+    position: absolute;
+    background: #219d84;
+}
+
+.line-8 {
+    position: absolute;
+    width: 1px;
+    height: 316px;
+    top: 13px;
+    left: 99px;
+}
+
+.line-9 {
+    position: absolute;
+    width: 1px;
+    height: 316px;
+    top: 13px;
+    left: 920px;
+}
+
+.info-section .hexagon-2 {
+    position: absolute;
+    top: 18px;
+    left: 120px;
+}
+
+#hexagon-image-author {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/images/Image@1X.png);
+    background-size: 240%;
+}
+
+.info-section .name {
+    position: absolute;
+    top: 60px;
+    left: 318px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    ;
+    color: rgba(215, 252, 245, 255);
+
+}
+
+.profession {
+    width: 280px;
+    position: absolute;
+    letter-spacing: -0.1px;
+    top: 94px;
+    left: 321px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(32, 129, 109, 255);
+}
+
+.about {
+    position: absolute;
+    line-height: 22px;
+    top: 116px;
+    left: 319px;
+    font-size: 12px;
+    width: 600px;
+    height: 76px;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    color: rgba(215, 252, 245, 255);
+}
+
+.social {
+
+    font-size: 0px;
+    position: absolute;
+    top: 250px;
+    left: 753px;
+}
+
+.social-network {
+    width: 25px;
+    height: 25px;
+    background: #323232;
+    display: inline-block;
+    margin: 0px;
+    background-position: center;
+}
+
+.social-network a {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.facebook a {
+    background-image: url(../assets/images/Facebook@1X.png);
+}
+
+.twitter a {
+    background-image: url(../assets/images/Twitter@1X.png);
+
+}
+
+.google a {
+    background-image: url(../assets/images/Google@1X.png);
+}
+
+.pinterest a {
+    background-image: url(../assets/images/Pinterest@1X.png);
+}
+
+.linkedin a {
+    background-image: url(../assets/images/Linkedin@1X.png);
+}
+
+.dribbble a {
+    background-image: url(../assets/images/Dribbble@1X.png);
+}
+
+.social-network:hover {
+    filter: hue-rotate(270deg);
+}
+
+
+footer {
+    height: 607px;
+
+    position: relative;
+}
+
+.get-in-touch {
+    position: relative;
+    background: #323232;
+    height: 564px;
+    ;
+}
+
+footer .title {
+    position: absolute;
+    top: 59px;
+    left: 121px;
+    height: 22px;
+    width: 228px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: rgba(224, 224, 224, 255);
+}
+
+footer .hint {
+    position: absolute;
+    top: 92px;
+    left: 123px;
+    height: 17px;
+    width: 450px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(190, 190, 190, 255);
+}
+
+form {
+    position: absolute;
+}
+
+input,
+textarea {
+    position: absolute;
+    background-color: #454545;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    border-width: 0px;
+    outline: 0;
+
+
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.input-name {
+    top: 134px;
+    left: 120px;
+    width: 563px;
+    height: 37px;
+}
+
+.input-email {
+    top: 188px;
+    left: 120px;
+    width: 563px;
+    height: 37px;
+}
+
+.input-subject {
+    top: 242px;
+    left: 120px;
+    width: 563px;
+    height: 37px;
+}
+
+.input-messege {
+    top: 296px;
+    left: 120px;
+    width: 563px;
+    height: 138px;
+}
+
+::placeholder {
+    position: relative;
+
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+}
+
+textarea {
+    padding-top: 11px;
+    padding-left: 15px;
+    letter-spacing: -0.25px;
+}
+
+input {
+
+    padding-left: 16px;
+    letter-spacing: -0.25px;
+}
+
+.input-submit {
+    top: 461px;
+    left: 610px;
+    width: 90px;
+    height: 38px;
+    background: #2eb398;
+    text-align: center;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 11px;
+    color: rgba(215, 252, 245, 255);
+    text-transform: uppercase;
+}
+
+.quote {
+    position: absolute;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    top: 115px;
+    left: 720px;
+    line-height: 22px;
+    color: rgba(190, 190, 190, 255);
+    width: 205px;
+    height: 117px;
+    text-align: justify;
+}
+
+.quote span:first-child {
+    font-family: Lato-Black;
+    color: rgba(224, 224, 224, 255);
+}
+
+.quote span {
+    word-spacing: 3.2px;
+    letter-spacing: 0.2px
+}
+
+.contacts {
+    width: 145px;
+    position: absolute;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    top: 291px;
+    left: 744px;
+    line-height: 22px;
+}
+
+.contacts div a:nth-child(2n) {
+    text-decoration: none;
+    color: rgba(190, 190, 190, 255);
+}
+
+.contacts .icon {
+    position: absolute;
+}
+
+.contacts .adress .icon {
+    background-image: url(../assets/images/location@1X.png);
+    height: 11px;
+    width: 7px;
+    left: -22px;
+    top: 5px;
+}
+
+.contacts .phone .icon {
+    background-image: url(../assets/images/phone@1X.png);
+    height: 11px;
+    width: 11px;
+    left: -24px;
+    top: 26px;
+}
+
+.contacts .email-adress .icon {
+    background-image: url(../assets/images/mail@1X.png);
+    height: 8px;
+    width: 13px;
+    left: -25px;
+    top: 49px;
+}
+
+.lines-get-in-touch {
+    position: absolute;
+}
+
+.lines-get-in-touch .line {
+    z-index: 1;
+    position: absolute;
+    background: #2b2b2b;
+}
+
+.line-10 {
+    position: absolute;
+    width: 960px;
+    height: 1px;
+    top: 13px;
+    left: 30px;
+}
+
+.line-11 {
+    position: absolute;
+    width: 960px;
+    height: 1px;
+    top: 552px;
+    left: 30px;
+}
+
+.rights {
+    position: relative;
+    height: 43px;
+    background-color: #222222;
+}
+
+.rights span {
+    position: absolute;
+    top: 14px;
+    left: 38px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 11px;
+    color: rgba(69, 69, 69, 255);
+    width: 185px;
+    letter-spacing: 0.45px;
+
+}

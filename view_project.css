@@ -1,6 +1,5 @@
 body {
   padding: 0;
-  background-color: silver;
   display: flex;
   flex-direction: column;
   justify-content: center;

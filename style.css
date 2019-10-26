@@ -166,6 +166,7 @@ body {
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+  
 }
 
 .items-container {
@@ -179,6 +180,7 @@ body {
   position: relative;
   animation: 0.5s ease-in-out;
   margin: 0 auto;
+
 }
 
 .active,
@@ -228,7 +230,7 @@ body {
 .project {
   width: 90%;
   height: 500px;
-}
+  }
 
 .control {
   position: absolute;

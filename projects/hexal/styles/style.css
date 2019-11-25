@@ -66,7 +66,7 @@ h1::after {
     position: absolute;
     width: 0px;
     height: 0px;
-    bottom: -15px;
+    bottom: -13px;
     left: -13px;
     border-top: 26px solid #323232;
     border-left: 46px solid transparent;

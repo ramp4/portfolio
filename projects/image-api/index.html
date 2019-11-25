@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CodeJam - Image - API</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="body">
+  <header class="header">
+    <a href="#" class="header--menu"></a>
+    <a href="#" class="header--menu_2"></a>
+    <h1 class="header--title">CodeJam - Palette</h1>
+  </header>
+  <main class="main">
+    <ul class="tools app_bar">
+      <li class="tools--item  tools--item_1">
+        Fill bucket
+      </li>
+      <li class=" tools--item tools--item_2">Choose color</li>
+      <div class="tools--divider"></div>
+      <li class="tools--item tools--item_3 tools--item-selected">Pencil</li>
+      <li class="tools--item tools--item_4">Transform</li>
+    </ul>
+    <ul class="colors app_bar">
+      <li class="colors--item colors--item_1">
+        <div class="color"></div>
+        <span>Current Color</span>
+      </li>
+      <li class="colors--item colors--item_2">
+        <div class="color"></div>
+        <span>Prev color</span>
+      </li>
+      <div class="colors---divider"></div>
+      <li class="colors--item colors--item_3">
+        <div class="color"></div>
+        <span>Red</span>
+      </li>
+      <li class="colors--item colors--item_4">
+        <div class="color"></div>
+        <span>Blue</span>
+      </li>
+    </ul>
+
+    <div class="workspace">
+      <div class="image_loader_form">
+        <div class="image_loader_form--load">Load</div>
+
+        <div class="image_loader_form--search">
+          <div class="search_icon"></div>
+          <input class="search_input" type="text" />
+        </div>
+
+      </div>
+      <canvas class="canvas_element"></canvas>
+    </div>
+    <script src="./script.js"></script>
+  </main>
+</body>
+
+</html>

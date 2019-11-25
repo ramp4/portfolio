@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.body {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  height: 900px;
+  background-color: whitesmoke;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.header--title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 24px;
+}
+
+.header--menu_2 {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 24px;
+  right: 16px;
+  bottom: 16px;
+  background-image: url(./assets/menu_2.svg);
+}
+
+.header--menu {
+  height: 24px;
+  width: 24px;
+  background-image: url(./assets/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 16px;
+}
+
+.main {
+  height: 850px;
+}
+
+.app_bar {
+  position: absolute;
+  left: 29px;
+  width: 228px;
+  height: 246px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.tools {
+  top: 127px;
+}
+
+.colors {
+  top: 465px;
+}
+
+.colors---divider,
+.tools--divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.colors--item,
+.tools--item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+  text-align: left;
+  width: 100px;
+}
+
+.tools--item {
+  cursor: pointer;
+}
+
+.tools--item::before {
+  position: absolute;
+  content: "";
+  left: 18px;
+}
+
+.tools--item::before {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}
+
+.tools--item_1::before {
+  background-image: url(./assets/tool_1.svg);
+}
+
+.tools--item_2::before {
+  background-image: url(./assets/tool_2.svg);
+}
+
+.tools--item_3::before {
+  background-image: url(./assets/tool_3.svg);
+}
+
+.tools--item_4 {
+  opacity: 0.5;
+}
+
+.tools--item_4::before {
+  background-image: url(./assets/transform.svg);
+}
+
+.tools--item-selected {
+  border: 1px solid #c4c4c4;
+}
+
+.colors--item .color {
+  border-radius: 100px;
+  border: 1px solid black;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "";
+  left: 18px;
+}
+
+.colors--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+.workspace {
+  position: relative;
+  left: 581px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_loader_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 512px;
+  height: 50px;
+}
+
+.image_loader_form--load {
+  background: #00BCD4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  height: 33px;
+  width: 65px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.image_loader_form--bw {
+  background: #00BCD4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  height: 33px;
+  width: 65px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.image_loader_form--search {
+  background: #FAFAFA;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  border: none;
+  height: 31px;
+  width: 200px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 170px;
+  margin-left: 20px;
+}
+
+.search_icon {
+  content: "";
+  background-image: url(./assets/search_icon.svg);
+  height: 12px;
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.search_input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 171px;
+  height: 28px;
+  border: none;
+}

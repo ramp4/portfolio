@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* header */
@@ -22,7 +25,7 @@ body {
 }
 
 .body {
-  background-color: silver;
+  background-color: white;
 }
 
 .header__photo {
@@ -32,7 +35,7 @@ body {
   background-position: center;
   border-radius: 100%;
   background-size: cover;
-  border: 2px white solid;
+  border: 2px black solid;
   margin: 10px;
 }
 
@@ -57,10 +60,17 @@ body {
   flex-grow: 1;
 }
 
+.info__github:hover {
+  background-color: silver;
+}
+
 .info__vk {
   order: 2;
   flex-grow: 1;
+}
 
+.info__vk:hover {
+  background-color: silver;
 }
 
 .info__telegram {
@@ -68,12 +78,16 @@ body {
   flex-grow: 1;
 }
 
+.info__telegram:hover {
+  background-color: silver;
+}
+
 .info__vk,
 .info__telegram,
 .info__github {
   font-size: 2rem;
   text-decoration: none;
-  border: 3px solid white;
+  border: 3px solid black;
   color: black;
   text-align: center;
   background-color: whitesmoke;
@@ -100,12 +114,12 @@ body {
 }
 
 .collapsible {
-  background-color: silver;
-  color: #333;
+  background-color: whitesmoke;
+  color: black;
   cursor: pointer;
   padding: 18px;
-  width: 90%;
-  border: 3px solid white;
+  width: 45%;
+  border: 3px solid black;
 
   outline: none;
   font-size: 2rem;
@@ -121,14 +135,17 @@ body {
 .collapsible::after {
   position: relative;
   display: inline-block;
-  content: ">";
-  font-size: 48px;
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url(./assets/arrow.svg);
   transform: rotate(90deg);
 }
 
 .active_collapsible,
 .collapsible:hover {
-  background-color: white;
+  background-color: silver;
 }
 
 .active_collapsible {
@@ -166,7 +183,7 @@ body {
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  
+
 }
 
 .items-container {
@@ -197,7 +214,7 @@ body {
 .description {
   margin: 30px 20%;
   font-size: 32px;
-  border: 2px solid white;
+  border: 2px solid black;
   display: flex;
   justify-content: space-between;
 }
@@ -210,27 +227,32 @@ body {
   color: #333;
 }
 
-.project-params {
+/* .project-params {
   width: 75%;
   text-align: left;
-}
+} */
 
 .project-name {
   padding: 10px;
+  color: black;
 }
 
 .project-link {
   text-decoration: none;
   color: black;
-  border: white 5px solid;
+  border: black 2px solid;
   background-color: whitesmoke;
   width: 90%;
+}
+
+.project-link:hover {
+  background-color: silver;
 }
 
 .project {
   width: 90%;
   height: 500px;
-  }
+}
 
 .control {
   position: absolute;
@@ -245,6 +267,8 @@ body {
   right: auto;
 }
 
+
+
 .control.right {
   right: 0;
   left: auto;
@@ -253,9 +277,18 @@ body {
 .arrow {
   display: inline-block;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 84px;
+  top: 30%;
+  height: 200px;
+  width: 200px;
+  background-image: url(./assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.arrow.left {
+  transform: scale(-1, 1)
 }
 
 .arrow.right {
